@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Border BorderBrush="#FF5F5A5A" BorderThickness="1" HorizontalAlignment="Left" Height="159" VerticalAlignment="Top" Width="792" Background="#FF5F5A5A">
+            <TextBlock TextWrapping="Wrap" Text="MARATHON SKILLS 2016" Margin="112,22,88,71" Cursor="None" IsEnabled="False" FontFamily="Segoe UI Black" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+        </Border>
+        <Button Content="Я хочу стать бегуном" HorizontalAlignment="Left" Margin="307,180,0,0" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0,0" Height="46" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Я хочу стать спонсором бегуна" HorizontalAlignment="Left" Margin="307,249,0,0" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0,0" Height="46" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Я хочу узнать о событии" HorizontalAlignment="Left" Margin="307,314,0,0" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0,0" Height="46" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" Margin="328,100,321,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="35" TextAlignment="Center" FontStyle="Italic" Foreground="#FFBDBDBD"><Run Text="Москва, Россия"/><LineBreak/><Run Text="Среда 21 октября 2016"/></TextBlock>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="707,352,0,0" VerticalAlignment="Top" Width="75" Height="29">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Border BorderBrush="#FF5F5A5A" BorderThickness="1" HorizontalAlignment="Left" Height="33" Margin="0,386,0,0" VerticalAlignment="Top" Width="792" Background="#FF5F5A5A"/>
+
+    </Grid>
+</Window>
