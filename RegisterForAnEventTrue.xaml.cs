@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для Runner.xaml
+    /// Логика взаимодействия для RegisterForAnEventTrue.xaml
     /// </summary>
-    public partial class Runner : Page
+    public partial class RegisterForAnEventTrue : Page
     {
-        public Runner()
+        public RegisterForAnEventTrue()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

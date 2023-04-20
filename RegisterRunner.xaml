@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="RegisterRunner" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFDDDEE3">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -37,7 +37,7 @@
             </Button.Resources>
         </Button>
         <Border BorderBrush="#FF5F5A5A" BorderThickness="1" HorizontalAlignment="Left" Height="33" Margin="0,386,0,0" VerticalAlignment="Top" Width="792" Background="#FF5F5A5A"/>
-        <Button Content="Login" Margin="710,361,10,38" Click="Button_Click">
+        <Button Content="Login" Margin="710,351,10,38" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>

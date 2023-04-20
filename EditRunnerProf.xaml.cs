@@ -16,21 +16,16 @@ using System.Windows.Shapes;
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для Runner.xaml
+    /// Логика взаимодействия для EditRunnerProf.xaml
     /// </summary>
-    public partial class Runner : Page
+    public partial class EditRunnerProf : Page
     {
-        public Runner()
+        public EditRunnerProf()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
         }

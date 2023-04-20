@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFDDDEE3">
         <Grid.RowDefinitions>
             <RowDefinition Height="239*"/>
             <RowDefinition Height="180*"/>

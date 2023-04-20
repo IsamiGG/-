@@ -7,7 +7,7 @@
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="WpfApp2.RegisterAsRunner"
         mc:Ignorable="d"
         Title="RegisterAsRunner" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFDDDEE3">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="41*"/>
             <ColumnDefinition Width="355*"/>
@@ -27,7 +27,7 @@
             </Button>
         </Border>
         <TextBlock HorizontalAlignment="Left" Margin="27,2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="386" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="White" Grid.Column="1"><Run Text="MARATHON SKILLS 2016"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="145,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="307" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FF4D4D4D" Text="Регистрация бегуна" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="166,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="307" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FF4D4D4D" Text="Регистрация бегуна" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="57,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="490" Height="20" Grid.Column="1"><Run Text="Пожалуйста"/><Run Text=" заполните всю информацию, чтобы зарегистрироваться в качестве бегуна"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="77,166,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="523,19,0,0" TextWrapping="Wrap" Text="Страна:" VerticalAlignment="Top" RenderTransformOrigin="0.348,0.564" Grid.Row="1" Grid.Column="1"/>

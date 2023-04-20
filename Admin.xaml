@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Admin">
 
-    <Grid Background="White">
+    <Grid Background="#FFDDDEE3">
         <Border BorderBrush="#FF5F5A5A" BorderThickness="1" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="800" Background="#FF5F5A5A">
             <Button Content="Назад" Margin="9,9,709,21" Click="Button_Click" BorderThickness="2">
                 <Button.Resources>

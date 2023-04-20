@@ -41,7 +41,9 @@ namespace WpfApp2
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            RegisterAsRunner frm2 = new RegisterAsRunner();
+            frm2.Show();
+            this.Hide();
         }
     }
 }

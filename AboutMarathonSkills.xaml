@@ -6,12 +6,13 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="AboutMarathonSkills" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFDDDEE3">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="713*"/>
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
         <Border BorderBrush="#FF5F5A5A" BorderThickness="1" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="793" Background="#FF5F5A5A" Margin="-1,-3,0,0" Grid.ColumnSpan="2">
+            <Button Content="Назад" Margin="8,15,722,24" Click="Button_Click"/>
 
         </Border>
         <TextBlock HorizontalAlignment="Left" Margin="109,0,0,0" TextWrapping="Wrap" Text="MARATHON SKILLS 2016" VerticalAlignment="Top" Height="54" Width="386" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="White"/>

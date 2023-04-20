@@ -105,6 +105,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DbConnect.edmx</DependentUpon>
     </Compile>
+    <Compile Include="EditRunnerProf.xaml.cs">
+      <DependentUpon>EditRunnerProf.xaml</DependentUpon>
+    </Compile>
     <Compile Include="event.cs">
       <DependentUpon>DbConnect.tt</DependentUpon>
     </Compile>
@@ -123,6 +126,9 @@
     <Compile Include="marathon.cs">
       <DependentUpon>DbConnect.tt</DependentUpon>
     </Compile>
+    <Compile Include="MyRaceResult.xaml.cs">
+      <DependentUpon>MyRaceResult.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Position.cs">
       <DependentUpon>DbConnect.tt</DependentUpon>
     </Compile>
@@ -134,6 +140,9 @@
     </Compile>
     <Compile Include="RegisterForAnEvent.xaml.cs">
       <DependentUpon>RegisterForAnEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForAnEventTrue.xaml.cs">
+      <DependentUpon>RegisterForAnEventTrue.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegisterRunner.xaml.cs">
       <DependentUpon>RegisterRunner.xaml</DependentUpon>
@@ -192,6 +201,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EditRunnerProf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Information.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -212,11 +225,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MyRaceResult.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegisterAsRunner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegisterForAnEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegisterForAnEventTrue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

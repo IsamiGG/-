@@ -23,5 +23,12 @@ namespace WpfApp2
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Information frm2 = new Information();
+            frm2.Show();
+            this.Hide();
+        }
     }
 }
