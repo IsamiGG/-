@@ -15,20 +15,18 @@ using System.Windows.Shapes;
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для Coordinator.xaml
+    /// Логика взаимодействия для RegisterAsRunner.xaml
     /// </summary>
-    public partial class Coordinator : Window
+    public partial class RegisterAsRunner : Window
     {
-        public Coordinator()
+        public RegisterAsRunner()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            MainWindow frm2 = new MainWindow();
-            frm2.Show();
-            this.Hide();
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

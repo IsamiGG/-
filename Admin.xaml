@@ -27,7 +27,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Благотворительные &#xD;&#xA;организации" HorizontalAlignment="Center" Margin="189,227,412,0" Width="199" Height="63" VerticalAlignment="Top">
+        <Button Content="Благотворительные &#xD;&#xA;организации" HorizontalAlignment="Center" Margin="189,227,412,0" Width="199" Height="63" VerticalAlignment="Top" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="8"/>

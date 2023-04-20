@@ -35,8 +35,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataVisualization.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Charts.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Core.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -46,6 +65,7 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -55,11 +75,44 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AboutMarathonSkills.xaml.cs">
+      <DependentUpon>AboutMarathonSkills.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Admin.xaml.cs">
       <DependentUpon>Admin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="charity.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
     <Compile Include="Coordinator.xaml.cs">
       <DependentUpon>Coordinator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="country.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnect.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbConnect.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnect.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnect.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbConnect.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="event.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="eventtype.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gender.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
     </Compile>
     <Compile Include="Information.xaml.cs">
       <DependentUpon>Information.xaml</DependentUpon>
@@ -67,12 +120,70 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="marathon.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Position.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="racekitoption.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterAsRunner.xaml.cs">
+      <DependentUpon>RegisterAsRunner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterForAnEvent.xaml.cs">
+      <DependentUpon>RegisterForAnEvent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegisterRunner.xaml.cs">
       <DependentUpon>RegisterRunner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="registration.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="registrationevent.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="registrationstatus.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="role.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="runner.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
     </Compile>
     <Compile Include="Runner.xaml.cs">
       <DependentUpon>Runner.xaml</DependentUpon>
     </Compile>
+    <Compile Include="sponsorship.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Timesheet.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="users.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="volunteer.cs">
+      <DependentUpon>DbConnect.tt</DependentUpon>
+    </Compile>
+    <Page Include="AboutMarathonSkills.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Admin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +212,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RegisterAsRunner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegisterForAnEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegisterRunner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -124,10 +243,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="DbConnect.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DbConnect.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DbConnect.edmx.diagram">
+      <DependentUpon>DbConnect.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -135,6 +263,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourse\banco-banespa.jpg" />
+    <Resource Include="Resourse\ibirapuera-park-lake.jpg" />
+    <Resource Include="Resourse\marathon-image.jpg" />
+    <Resource Include="Resourse\teatro-municipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbConnect.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DbConnect.Context.cs</LastGenOutput>
+      <DependentUpon>DbConnect.edmx</DependentUpon>
+    </Content>
+    <Content Include="DbConnect.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbConnect.edmx</DependentUpon>
+      <LastGenOutput>DbConnect.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

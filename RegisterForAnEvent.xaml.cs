@@ -16,30 +16,26 @@ using System.Windows.Shapes;
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для RegisterRunner.xaml
+    /// Логика взаимодействия для RegisterForAnEvent.xaml
     /// </summary>
-    public partial class RegisterRunner : Window
+    public partial class RegisterForAnEvent : Page
     {
-        public RegisterRunner()
+        public RegisterForAnEvent()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-           MainWindow frm2 = new MainWindow();
-            frm2.Show();
-            this.Hide();
+
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
         {
-            Login frm2 = new Login();
-            frm2.Show();
-            this.Hide();
+
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
         {
 
         }

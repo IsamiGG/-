@@ -22,14 +22,14 @@
         <TextBlock HorizontalAlignment="Left" Margin="107,8,0,0" TextWrapping="Wrap" Text="MARATHON SKILLS 2016" VerticalAlignment="Top" Height="54" Width="383" FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="White"/>
 
 
-        <Button Content="Я участвовал ранее" HorizontalAlignment="Center" Margin="328,156,318,0" Width="146" Height="43" VerticalAlignment="Top">
+        <Button Content="Я участвовал ранее" HorizontalAlignment="Center" Margin="328,156,318,0" Width="146" Height="43" VerticalAlignment="Top" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Я новый участник" HorizontalAlignment="Center" Margin="328,233,318,0" Width="146" Height="43" VerticalAlignment="Top">
+        <Button Content="Я новый участник" HorizontalAlignment="Center" Margin="328,233,318,0" Width="146" Height="43" VerticalAlignment="Top" Click="Button_Click_2">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>

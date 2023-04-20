@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для Coordinator.xaml
+    /// Логика взаимодействия для AboutMarathonSkills.xaml
     /// </summary>
-    public partial class Coordinator : Window
+    public partial class AboutMarathonSkills : Window
     {
-        public Coordinator()
+        public AboutMarathonSkills()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow frm2 = new MainWindow();
-            frm2.Show();
-            this.Hide();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

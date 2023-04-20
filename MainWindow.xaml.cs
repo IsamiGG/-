@@ -27,7 +27,28 @@ namespace WpfApp2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Information frm2 = new Information();
+            frm2.Show();
+            this.Hide();
+        }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            RegisterRunner frm2 = new RegisterRunner();
+            frm2.Show();
+            this.Hide();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Login frm2 = new Login();
+            frm2.Show();
+            this.Hide();
         }
     }
 }
